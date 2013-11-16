@@ -5,20 +5,11 @@
          version="2.5"
          xmlns="http://java.sun.com/xml/ns/javaee">
 
-  <!-- Servlets -->
-<!--   <servlet> -->
-<!--     <servlet-name>greetServlet</servlet-name> -->
-<!--     <servlet-class>test.server.GreetingServiceImpl</servlet-class> -->
-<!--   </servlet> -->
-  
-<!--   <servlet-mapping> -->
-<!--     <servlet-name>greetServlet</servlet-name> -->
-<!--     <url-pattern>/test5/greet</url-pattern> -->
-<!--   </servlet-mapping> -->
+
   
   <!-- Default page to serve -->
   <welcome-file-list>
-    <welcome-file>Test5.html</welcome-file>
+    <welcome-file>Testgwp.html</welcome-file>
   </welcome-file-list>
 
 </web-app>

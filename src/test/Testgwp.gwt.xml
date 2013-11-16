@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  When updating your version of GWT, you should also update this DTD reference,
+  so that your app can take advantage of the latest GWT module capabilities.
+-->
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.5.1//EN"
+  "http://google-web-toolkit.googlecode.com/svn/tags/2.5.1/distro-source/core/src/gwt-module.dtd">
+<module rename-to='testgwp'>
+    <!-- Inherit the core Web Toolkit stuff.                        -->
+    <inherits name="com.google.gwt.user.User"/>
+    <inherits name='com.google.gwt.core.Core'/>
+	<inherits name='com.google.gwt.inject.Inject' />
+	<inherits name='com.google.gwt.resources.Resources' />
+
+    <!-- Inherit the default GWT style sheet.  You can change       -->
+    <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+
+    <!-- Other module inherits                                      -->
+    <inherits name='com.gwtplatform.dispatch.Dispatch'/>
+<!--     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/> -->
+	<inherits name='com.gwtplatform.mvp.Mvp' />
+
+	<!-- Drag and Drop -->
+	<inherits name='com.allen_sauer.gwt.dnd.gwt-dnd'/>
+
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='test.client.Testgwtp'/>
+
+
+    <!-- Specify the paths for translatable code                    -->
+    <source path='client'/>
+<!--     <source path='shared'/> -->
+
+    <set-configuration-property name="gin.ginjector.modules"
+            value="test.client.gin.ClientModule"/>
+</module>

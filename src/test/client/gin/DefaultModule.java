@@ -1,7 +1,7 @@
 package test.client.gin;
 
 
-import test.client.presenters.MyRootPresenter;
+import test.client.application.MyRootPresenter;
 
 import com.google.gwt.inject.client.AbstractGinModule;
 import com.google.inject.Singleton;
